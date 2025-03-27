@@ -1,5 +1,5 @@
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.*
+import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -17,7 +17,7 @@ fun PistaScreen(navController: NavHostController, pista: String, respostaCerta: 
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(text = pista, style = MaterialTheme.typography.h5)
+        Text(text = pista, style = MaterialTheme.typography.headlineMedium) //mudar estilo depois
         Spacer(modifier = Modifier.height(20.dp))
         TextField(
             value = resposta,
@@ -25,7 +25,7 @@ fun PistaScreen(navController: NavHostController, pista: String, respostaCerta: 
             label = { Text("") } //resposta
         )
         if (showError) {
-            Text("", color = MaterialTheme.colors.error) //resposta errada
+            Text("", color = MaterialTheme.colors.error) //resposta errada //material 3 é diferente
         }
         Spacer(modifier = Modifier.height(20.dp))
         Row {

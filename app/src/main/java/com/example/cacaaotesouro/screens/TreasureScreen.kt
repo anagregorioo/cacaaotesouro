@@ -2,7 +2,7 @@ import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.*
+import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -25,7 +25,7 @@ fun TreasureScreen(navController: NavHostController, timeElapsed: Long) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         AnimatedVisibility(visible = isVisible, enter = fadeIn(), exit = fadeOut()) {
-            Text(text = "", style = MaterialTheme.typography.h4) // finaliza encontrando o tesouro
+            Text(text = "", style = MaterialTheme.typography.headlineMedium) // finaliza encontrando o tesouro //mudar estilo depois
         }
         Spacer(modifier = Modifier.height(20.dp))
         Text("Tempo total: $timeElapsed segundos")
