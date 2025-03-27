@@ -1,6 +1,11 @@
-import androidx.compose.runtime.*
-import androidx.navigation.NavHostController
-import androidx.navigation.compose.*
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableLongStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import com.example.cacaaotesouro.screens.HomeScreen
 
 @Composable
