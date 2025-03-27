@@ -1,11 +1,12 @@
 import androidx.compose.runtime.*
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.*
+import com.example.cacaaotesouro.screens.HomeScreen
 
 @Composable
 fun TreasureHuntApp() {
     val navController = rememberNavController()
-    var startTime by remember { mutableStateOf(System.currentTimeMillis()) }
+    var startTime by remember { mutableLongStateOf(System.currentTimeMillis()) }
 
     NavHost(navController = navController, startDestination = "home") {
         composable("home") {
