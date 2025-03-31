@@ -25,7 +25,7 @@ fun PistaScreen(navController: NavHostController, pista: String, respostaCerta: 
             label = { Text("") } //resposta
         )
         if (showError) {
-            Text("", color = MaterialTheme.colors.error) //resposta errada //material 3 é diferente
+            Text("", color = MaterialTheme.colorScheme.error) //resposta errada //material 3 é diferente
         }
         Spacer(modifier = Modifier.height(20.dp))
         Row {
